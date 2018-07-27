@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="rps-wrapper">
+      <ul id="events"></ul>
+
+    </div>
+    <div>
+        <br>
+          <div id="playArea">
+          <table id="radar">
+            <tr>
+              <th class="cellb">A1</th>
+              <th class="cellb">A2</th> 
+              <th class="cellb">A3</th>
+              <th class="cellb">A4</th>
+              <th class="cellb">A5</th>
+              <th class="cellb">A6</th>
+              <th class="cellb">A7</th>
+              <th class="cellb">A8</th>
+              <th class="cellb">A9</th>
+              <th class="cellb">A10</th>
+            </tr>
+            <tr>
+              <th class="cellb">B1</th>
+              <th class="cellb">B2</th> 
+              <th class="cellb">B3</th>
+              <th class="cellb">B4</th>
+              <th class="cellb">B5</th>
+              <th class="cellb">B6</th>
+              <th class="cellb">B7</th>
+              <th class="cellb">B8</th>
+              <th class="cellb">B9</th>
+              <th class="cellb">B10</th>
+            </tr>
+            <tr>
+              <th class="cellb">C1</th>
+              <th class="cellb">C2</th> 
+              <th class="cellb">C3</th>
+              <th class="cellb">C4</th>
+              <th class="cellb">C5</th>
+              <th class="cellb">C6</th>
+              <th class="cellb">C7</th>
+              <th class="cellb">C8</th>
+              <th class="cellb">C9</th>
+              <th class="cellb">C10</th>
+            </tr>
+            <tr>
+              <th class="cellb">D1</th>
+              <th class="cellb">D2</th> 
+              <th class="cellb">D3</th>
+              <th class="cellb">D4</th>
+              <th class="cellb">D5</th>
+              <th class="cellb">D6</th>
+              <th class="cellb">D7</th>
+              <th class="cellb">D8</th>
+              <th class="cellb">D9</th>
+              <th class="cellb">D10</th>
+            </tr>
+            <tr>
+              <th class="cellb">E1</th>
+              <th class="cellb">E2</th> 
+              <th class="cellb">E3</th>
+              <th class="cellb">E4</th>
+              <th class="cellb">E5</th>
+              <th class="cellb">E6</th>
+              <th class="cellb">E7</th>
+              <th class="cellb">E8</th>
+              <th class="cellb">E9</th>
+              <th class="cellb">E10</th>
+            </tr>
+            <tr>
+              <th class="cellb">F1</th>
+              <th class="cellb">F2</th> 
+              <th class="cellb">F3</th>
+              <th class="cellb">F4</th>
+              <th class="cellb">F5</th>
+              <th class="cellb">F6</th>
+              <th class="cellb">F7</th>
+              <th class="cellb">F8</th>
+              <th class="cellb">F9</th>
+              <th class="cellb">F10</th>
+            </tr>
+            <tr>
+              <th class="cellb">G1</th>
+              <th class="cellb">G2</th> 
+              <th class="cellb">G3</th>
+              <th class="cellb">G4</th>
+              <th class="cellb">G5</th>
+              <th class="cellb">G6</th>
+              <th class="cellb">G7</th>
+              <th class="cellb">G8</th>
+              <th class="cellb">G9</th>
+              <th class="cellb">G10</th>
+            </tr>
+            <tr>
+              <th class="cellb">H1</th>
+              <th class="cellb">H2</th> 
+              <th class="cellb">H3</th>
+              <th class="cellb">H4</th>
+              <th class="cellb">H5</th>
+              <th class="cellb">H6</th>
+              <th class="cellb">H7</th>
+              <th class="cellb">H8</th>
+              <th class="cellb">H9</th>
+              <th class="cellb">H10</th>
+            </tr>
+            <tr>
+              <th class="cellb">I1</th>
+              <th class="cellb">I2</th> 
+              <th class="cellb">I3</th>
+              <th class="cellb">I4</th>
+              <th class="cellb">I5</th>
+              <th class="cellb">I6</th>
+              <th class="cellb">I7</th>
+              <th class="cellb">I8</th>
+              <th class="cellb">I9</th>
+              <th class="cellb">I10</th>
+            </tr>
+            <tr>
+              <th class="cellb">J1</th>
+              <th class="cellb">J2</th>
+              <th class="cellb">J3</th>
+              <th class="cellb">J4</th>
+              <th class="cellb">J5</th>
+              <th class="cellb">J6</th>
+              <th class="cellb">J7</th>
+              <th class="cellb">J8</th>
+              <th class="cellb">J9</th>
+              <th class="cellb">J10</th>
+          </tr>
+          </table>
+          <table id="fleet">
+              <tr>
+                <th class="cell">A1</th>
+                <th class="cell">A2</th> 
+                <th class="cell">A3</th>
+                <th class="cell">A4</th>
+                <th class="cell">A5</th>
+                <th class="cell">A6</th>
+                <th class="cell">A7</th>
+                <th class="cell">A8</th>
+                <th class="cell">A9</th>
+                <th class="cell">A10</th>
+              </tr>
+              <tr>
+                <th class="cell">B1</th>
+                <th class="cell">B2</th> 
+                <th class="cell">B3</th>
+                <th class="cell">B4</th>
+                <th class="cell">B5</th>
+                <th class="cell">B6</th>
+                <th class="cell">B7</th>
+                <th class="cell">B8</th>
+                <th class="cell">B9</th>
+                <th class="cell">B10</th>
+              </tr>
+              <tr>
+                <th class="cell">C1</th>
+                <th class="cell">C2</th> 
+                <th class="cell">C3</th>
+                <th class="cell">C4</th>
+                <th class="cell">C5</th>
+                <th class="cell">C6</th>
+                <th class="cell">C7</th>
+                <th class="cell">C8</th>
+                <th class="cell">C9</th>
+                <th class="cell">C10</th>
+              </tr>
+              <tr>
+                <th class="cell">D1</th>
+                <th class="cell">D2</th> 
+                <th class="cell">D3</th>
+                <th class="cell">D4</th>
+                <th class="cell">D5</th>
+                <th class="cell">D6</th>
+                <th class="cell">D7</th>
+                <th class="cell">D8</th>
+                <th class="cell">D9</th>
+                <th class="cell">D10</th>
+              </tr>
+              <tr>
+                <th class="cell">E1</th>
+                <th class="cell">E2</th> 
+                <th class="cell">E3</th>
+                <th class="cell">E4</th>
+                <th class="cell">E5</th>
+                <th class="cell">E6</th>
+                <th class="cell">E7</th>
+                <th class="cell">E8</th>
+                <th class="cell">E9</th>
+                <th class="cell">E10</th>
+              </tr>
+              <tr>
+                <th class="cell">F1</th>
+                <th class="cell">F2</th> 
+                <th class="cell">F3</th>
+                <th class="cell">F4</th>
+                <th class="cell">F5</th>
+                <th class="cell">F6</th>
+                <th class="cell">F7</th>
+                <th class="cell">F8</th>
+                <th class="cell">F9</th>
+                <th class="cell">F10</th>
+              </tr>
+              <tr>
+                <th class="cell">G1</th>
+                <th class="cell">G2</th> 
+                <th class="cell">G3</th>
+                <th class="cell">G4</th>
+                <th class="cell">G5</th>
+                <th class="cell">G6</th>
+                <th class="cell">G7</th>
+                <th class="cell">G8</th>
+                <th class="cell">G9</th>
+                <th class="cell">G10</th>
+              </tr>
+              <tr>
+                <th class="cell">H1</th>
+                <th class="cell">H2</th> 
+                <th class="cell">H3</th>
+                <th class="cell">H4</th>
+                <th class="cell">H5</th>
+                <th class="cell">H6</th>
+                <th class="cell">H7</th>
+                <th class="cell">H8</th>
+                <th class="cell">H9</th>
+                <th class="cell">H10</th>
+              </tr>
+              <tr>
+                <th class="cell">I1</th>
+                <th class="cell">I2</th> 
+                <th class="cell">I3</th>
+                <th class="cell">I4</th>
+                <th class="cell">I5</th>
+                <th class="cell">I6</th>
+                <th class="cell">I7</th>
+                <th class="cell">I8</th>
+                <th class="cell">I9</th>
+                <th class="cell">I10</th>
+              </tr>
+              <tr>
+                <th class="cell">J1</th>
+                <th class="cell">J2</th>
+                <th class="cell">J3</th>
+                <th class="cell">J4</th>
+                <th class="cell">J5</th>
+                <th class="cell">J6</th>
+                <th class="cell">J7</th>
+                <th class="cell">J8</th>
+                <th class="cell">J9</th>
+                <th class="cell">J10</th>
+            </tr>
+          </table>
+          <div class="s4 ship"></div>
+          <div class="s3 ship"></div>
+          <div class="s3 ship"></div>
+          <div class="s2 ship"></div>
+          <div class="s2 ship"></div>
+          <div class="s2 ship"></div>
+          <div class="s1 ship"></div>
+          <div class="s1 ship"></div>
+          <div class="s1 ship"></div>
+          <div class="s1 ship"></div>
+          </div>
+    </div>
+    <div id="ready"><h1>READY</h1></div>
+    <div id="fleetCover"></div>
+    <div id="radarCover"></div>
+    <div id="win"><h1>YOU WIN</h1></div>
+    <div id="lost"><h1>YOU LOOSE</h1></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+    <script src="src/preGame.js"></script>
+  </body>
+</html>

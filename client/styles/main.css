@@ -1,0 +1,126 @@
+table{
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+th{ 
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    color: white;
+}
+th:hover{
+    color: black;
+}
+#radar{
+    position: absolute;
+    top:200px;
+    left: 50px;
+    cursor: pointer;
+}
+#fleet{
+    position: absolute;
+    top:200px;
+    left: 600px;
+    cursor: pointer;
+    text-emphasis: none; 
+}
+.s1{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color: gray;
+}
+.s2{
+    position: absolute;
+    width: 88px;
+    height: 44px;
+    background-color: gray;
+}
+.s3{
+    position: absolute;
+    width: 122px;
+    height: 44px;
+    background-color: gray;
+}
+.s4{
+    position: absolute;
+    width: 166px;
+    height: 44px;
+    background-color: gray;
+}
+#ready{
+    position:absolute;
+    top:-50px;
+    left:500px;
+    background-color: rgb(73, 73, 73);
+    width: 290px;
+    height: 150px;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#ready:hover{
+    color:white;
+    cursor: pointer;
+}
+#fleetCover{
+    display: none;
+    background-color: aqua;
+    opacity: 0.4;
+    width: 482px;
+    height: 482px;
+    position:absolute;
+    top:200px;
+    left: 600px;
+}
+#radarCover{
+    display: block;
+    background-color: rgb(97, 97, 97);
+    opacity: 0.4;
+    width: 482px;
+    height: 482px;
+    position:absolute;
+    top:200px;
+    left: 50px;
+}
+#events{
+    border: 1px solid grey;
+    background-color: rgb(216, 216, 216);
+    height: 100px;
+    width: 300px;
+    overflow: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#win{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+#lost{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+#playArea{
+    margin: 0 auto;
+}
